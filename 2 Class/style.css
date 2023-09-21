@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+}
+
+
+.colour{
+    background: bisque;
+    color: white;
+}
+.colour-2{
+    background-color: blueviolet;
+    color: white;
+}
