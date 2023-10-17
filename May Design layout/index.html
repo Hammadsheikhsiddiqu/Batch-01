@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+
+     <!-- FontAwesome-For-Icons -->
+   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Loader -->`
+           <div id="loader">
+            <div class="Loader-container">
+                <div class="ring"></div >
+                <div class="ring"></div >
+                <div class="ring"></div >
+                <span><img src="logo.jpg" width="100px" height="100px" style="border-radius: 20px;"></span>    
+            </div>
+            </div>
+            <div id="whole-page">
+    <nav>
+        <!-- Social-link-and-phone-number -->
+        <div class="social-call">
+            <!-- Social-links -->
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+
+            </div>
+            <!-- phone-number -->
+            <div class="phone">
+                <span>Call us now: 0123-456-789</span>
+            </div>
+
+        </div>
+    </nav>
+    <header>
+            <div id="logo">
+                    <img src="logo.jpg" alt="image coming-soon">
+                </div>
+                <div id="navigation">
+                    <ul>
+                        <li><a href="#home" class="home-active">Maison</a></li>
+                        <li><a href="#services">Prestations de service</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Bienvenue dans notre société</h2>
+            <p>Nous concevons des sites Web, créons des logos, fournissons des cartes NFC et concevons des décorations de magasins.</p>
+            <a href="#contact" class="btn">Commencer</a>
+        </div>
+    </section>
+
+    <!-- <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Web Design</h3>
+                <p>We create stunning and responsive websites that make your brand stand out.</p>
+            </div>
+            <div class="service">
+                <h3>Logo Creation</h3>
+                <p>Our creative team designs unique logos to represent your brand's identity.</p>
+            </div>
+            <div class="service">
+                <h3>NFC Cards</h3>
+                <p>We offer NFC card solutions for secure and contactless interactions.</p>
+            </div>
+            <div class="service">
+                <h3>Store Decorations</h3>
+                <p>We transform stores with captivating decorations that enhance the customer experience.</p>
+            </div>
+        </div>
+    </section> -->
+    <section id="services">
+    <div class="container">
+        <div id="skills-container" class="clearfix">
+            <h2>Nos services</h2>
+            <hr>
+          <div class="skills-items">
+            <img src="Website.jpg" />
+            <h3>Conception</h3>
+            <p>
+                Nous créons des sites Web époustouflants et réactifs qui font ressortir votre marque.
+            </p>
+          </div>
+          <div class="skills-items">
+            <img src="NFC Card.jpg" />
+            <h3>Carte NFC</h3>
+            <p>
+                Nous proposons des solutions de cartes NFC pour des interactions sécurisées et sans contact.
+            </p>
+          </div>
+          <div class="skills-items">
+            <img src="Logos.jpg" />
+            <h3>Créations de logos</h3>
+            <p>
+                Notre équipe créative conçoit des logos uniques pour représenter l’identité de votre marque.
+            </p>
+          </div>
+          <div class="skills-items">
+            <img src="Store Decoration.jpg" />
+            <h3>Magasin-Décoration</h3>
+            <p>
+                Nous transformons les magasins avec des décorations captivantes qui améliorent l'expérience client.
+            </p>
+          </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-section">
+            <!-- <h2>Contact Us</h2> -->
+            <h2>Contactez-nous</h2>
+            <hr>
+            <!-- <p>Ready to get started? Contact us today to discuss your project.</p> -->
+            <p>Prêt à commencer? Contactez-nous dès aujourd'hui pour discuter de votre projet.</p>
+            <form>
+                <input type="text" placeholder="votre nom" class="animated-border" required>
+                <input type="email" placeholder="Votre e-mail" class="animated-border" required>
+                <textarea placeholder="Votre message"></textarea required>
+                <button class="btn">Envoyer le message</button required>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contanier">
+            <p>&copy; Conception de mai 2023. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <div onclick="scrollToTop()" class="scrollTop">Haut</div>
+
+    <script src="script.js"></script>
+     <!-- Loader-Script -->
+     <script src="jquery-3.7.0.min.js"></script>
+     <script>
+         $(window).on('load',function(){
+             $("#loader").fadeOut(1000);
+             $("#whole-page").fadeIn(1000);
+         })
+        //  for Scroll-Top-------
+        function scrollToTop(){
+            window.scrollTo(0, 0)
+        }
+      </script>
+</body>
+</html>
