@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juste Bonbon</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <!-- FontAwesome-For-Icons -->
+   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="Assets/css/lightslider.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <!-- Social-link-and-phone-number -->
+        <div class="social-call">
+            <!-- Social-links -->
+            <div class="social">
+                <a href="https://www.facebook.com/justebonbon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/justebonbon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.google.com/justebonbon"><i class="fab fa-google"></i></a>
+
+            </div>
+            <!-- phone-number -->
+            <div class="phone">
+                <span>Call us now: 0123-456-789</span>
+            </div>
+
+        </div>
+    </nav>
+    <header class="navigation">
+        <div class="logo">
+            <a href="#"><img src="Assets/images/Logo.png.jpg" alt=""></a>
+            
+        </div>
+        <!-- Menu Icon -->
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+         <!-- Nav List -->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#categories">Categories</a>
+            <ul id="submenu">
+                <li><a href="#">BONBON</a></li>
+                <li><a href="#">CHOCOLAT</a></li>
+                <li><a href="#">CONFISERIE</a></li>
+                <li><a href="#">BISCUIT ET GATEAU</a></li>
+                <li><a href="#">BIO</a></li>
+
+            </ul>
+            </li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#customers">Customers</a></li>
+        </ul>
+        <!-- Right-menu -->
+        <div class="right-menu">
+            <!-- Search -->
+            <a href="javascript:void(0);" class="search">
+                <i class="fas fa-search"></i>
+            </a>
+             <!-- User -->
+             <a href="javascript:void(0);" class="user">
+                <i class="far fa-user"></i>
+            </a> <!-- Card-icon -->
+            <a href="#">
+                <i class="fas fa-shopping-cart">
+                <!-- number-of-product-in-cart -->
+                <span class="num-cart-product">0</span>
+            </i>
+            </a>
+        </div>
+    </header>
+
+    <!-- search-bar -->
+    <div class="search-bar">
+        <!-- search-input -->
+        <div class="search-input">
+            <!-- input -->
+            <input type="text" placeholder="Search For Products">
+            <!-- cancel-btn -->
+            <a href="javascript:void(0);" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- login-and-sign-up-form -->
+
+    <div class="form">
+        <!-- login -->
+        <div class="login-form">
+
+            <!-- cancel-btn -->
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <!-- heading -->
+            <strong>Log In</strong>
+            <!-- inputs -->
+            <form>
+                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="password" placeholder="password" name="password" required>
+                <!-- submit-btn -->
+                <input type="submit" value="Log In">
+            </form>
+            <!-- forget-and-sign-up-btn -->
+            <div class="form-btns">
+            <a href="#" class="forget">Forget Your Passeord?</a>
+            <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+            </div>
+
+        </div>
+
+        <!-- sign-up -->
+
+        <div class="sign-up-form">
+
+            <!-- cancel-btn -->
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <!-- heading -->
+            <strong>Sign up</strong>
+            <!-- inputs -->
+            <form>
+                <input type="text" placeholder="Full Name" name="full name" required>
+                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="password" placeholder="password" name="password" required>
+                <!-- submit-btn -->
+                <input type="submit" value="Sign Up">
+            </form>
+            <!-- forget-and-sign-up-btn -->
+            <div class="form-btns">
+            <a href="javascript:void(0);" class="already-account">Already Have Account?</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Full-slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="Assets/images/banner-1.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="Assets/images/banner-2.jpeg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="Assets/images/banner-3.jpg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="Assets/images/banner-4.jpg" alt="Image 4">
+            </div>
+            <div class="slide">
+                <img src="Assets/images/banner-5.jpg" alt="Image 5">
+            </div>
+            <div class="slide">
+                <img src="Assets/images/banner-6.jpg" alt="Image 6">
+            </div>
+            
+        </div>
+    </div>
+    <div class="controls">
+        <button class="control-btn" onclick="prevSlide()">Previous</button>
+        <button class="control-btn" onclick="nextSlide()">Next</button>
+    </div>
+
+
+    <!-- Featured-Categories -->
+
+    <div class="featured-heading">
+        <h2>Featured-Categories</h2>
+    </div>
+
+    <!-- Feature-box -->
+
+
+    <ul id="autoWidth" class="cs-hidden">
+        <!--1----------------------------->
+        <li class="item">
+                <div class="feature-box">
+                    <a href="javascript:void(0);">
+                        <img src="Assets/images/canday.jpg" alt="">
+                    </a>
+                </div>
+                <!-- Text------------>
+                <span>BONBON</span>
+        </li>
+        <!--2----------------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="javascript:void(0);">
+                    <img src="Assets/images/choclate.jpg" alt="">
+                </a>
+            </div>
+            <!-- Text------------>
+            <span>CHOCOLAT</span>
+        </li>
+    <!--3-----------------------------> 
+       <li class="item">
+        <div class="feature-box">
+            <a href="#">
+                <img src="Assets/images/confectionary.jpg" alt="">
+            </a>
+        </div>
+        <!-- Text------------>
+        <span>CONFISERIE</span>
+         </li>
+        <!--4----------------------------->
+         <li class="item">
+    <div class="feature-box">
+        <a href="#">
+            <img src="Assets/images/Biscuit.jpg" alt="">
+        </a>
+    </div>
+    <!-- Text------------>
+    <span>BISCUIT ET GATEAU</span>
+         </li>
+         <!--6----------------------------->
+         <li class="item">
+    <div class="feature-box">
+        <a href="#">
+            <img src="Assets/images/organic.jpg" alt="">
+        </a>
+    </div>
+    <!-- Text------------>
+    <span>ORGANIC</span>
+         </li>
+      </ul>
+
+      <!-- New-Arrival -->
+      <section class="new-arrival">
+        <!-- heading -->
+        <div class="arrival-heading">
+            <strong>New-Arrival</strong>
+            <p>We Provide You Best & Great Products</p>
+        </div>
+
+        <!-- product-container -->
+        <div class="product-container">
+            <!-- product-box-1 -->
+            <div class="product-box">
+                <!-- img -->
+                <div class="product-img">
+               <!-- add-cart -->
+                <a href="javascript:void(0);" class="add-cart">
+                    <li class="fas fa-shopping-cart"></li>
+                </a>
+                     <img src="Assets/images/card-1.png.jpg" alt="">
+                </div>
+                <!-- details -->
+                <div class="product-details">
+                    <a href="javascript:void(0);" class="p-name">Praline rouge <br> concassees 12% <br> amandes...</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+            <!-- product-box-2 -->
+            <div class="product-box">
+                <!-- img -->
+                <div class="product-img">
+               <!-- add-cart -->
+                <a href="javascript:void(0);" class="add-cart">
+                    <li class="fas fa-shopping-cart"></li>
+                </a>
+                     <img src="Assets/images/card-2.png.jpg" alt="">
+                </div>
+                <!-- details -->
+                <div class="product-details">
+                    <a href="javascript:void(0);" class="p-name">Praline rouges 12% <br> amandes SAC DE 2.5 <br> KG</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+            <!-- product-box-3 -->
+            <div class="product-box">
+                <!-- img -->
+                <div class="product-img">
+               <!-- add-cart -->
+                <a href="javascript:void(0);" class="add-cart">
+                    <li class="fas fa-shopping-cart"></li>
+                </a>
+                     <img src="Assets/images/card-3.png.jpg" alt="">
+                </div>
+                <!-- details -->
+                <div class="product-details">
+                    <a href="javascript:void(0);" class="p-name">Praline Rouges 12% <br> Amandes paquet 500g</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+            <!-- product-box-4 -->
+            <div class="product-box">
+                <!-- img -->
+                <div class="product-img">
+               <!-- add-cart -->
+                <a href="javascript:void(0);" class="add-cart">
+                    <li class="fas fa-shopping-cart"></li>
+                </a>
+                     <img src="Assets/images/card-4.png.jpg" alt="">
+                </div>
+                <!-- details -->
+                <div class="product-details">
+                    <a href="javascript:void(0);" class="p-name">Nougats de <br> Montelimar en <br> emballages...</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+            <!-- product-box-5 -->
+            <div class="product-box">
+                <!-- img -->
+                <div class="product-img">
+               <!-- add-cart -->
+                <a href="javascript:void(0);" class="add-cart">
+                    <li class="fas fa-shopping-cart"></li>
+                </a>
+                     <img src="Assets/images/card-5.png.jpg" alt="">
+                </div>
+                <!-- details -->
+                <div class="product-details">
+                    <a href="javascript:void(0);" class="p-name">Caramels au Beurre <br> Sale (sans gelatine)</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+            <!-- product-box-6 -->
+            <div class="product-box">
+                <!-- img -->
+                <div class="product-img">
+               <!-- add-cart -->
+                <a href="javascript:void(0);" class="add-cart">
+                    <li class="fas fa-shopping-cart"></li>
+                </a>
+                     <img src="Assets/images/card-6.png.jpg" alt="">
+                </div>
+                <!-- details -->
+                <div class="product-details">
+                    <a href="javascript:void(0);" class="p-name">Touron blando paquet <br> 150g</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+            <!-- product-box-7 -->
+            <div class="product-box">
+                <!-- img -->
+                <div class="product-img">
+               <!-- add-cart -->
+                <a href="javascript:void(0);" class="add-cart">
+                    <li class="fas fa-shopping-cart"></li>
+                </a>
+                     <img src="Assets/images/card-7.png.jpg" alt="">
+                </div>
+                <!-- details -->
+                <div class="product-details">
+                    <a href="javascript:void(0);" class="p-name">Panettone Pur Berrue <br> Boite 900g</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+            <!-- product-box-8 -->
+            <div class="product-box">
+                <!-- img -->
+                <div class="product-img">
+               <!-- add-cart -->
+                <a href="javascript:void(0);" class="add-cart">
+                    <li class="fas fa-shopping-cart"></li>
+                </a>
+                     <img src="Assets/images/card-8.png.jpg" alt="">
+                </div>
+                <!-- details -->
+                <div class="product-details">
+                    <a href="javascript:void(0);" class="p-name">Mini Panettone Pur <br> Beurre Boite 100g</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <footer>
+        <div class="row">
+            <div class="col">
+                <img src="Assets/images/Logo.png.jpg" class="footer-logo">
+                <p>We Provide You Best & Great Products!</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <i class="fa-regular fa-location-dot"></i>
+                <p>34 rue Anatole France,69200 Vénissieux.</p>
+                <p class="email-id">Email: contact@justebonbon.com</p>
+                <h4>Call us now: 07712528XXX</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Costumers</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/justebonbon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/justebonbon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.google.com/justebonbon"><i class="fab fa-google"></i></a>
+                    <a href="https://wa.me/03112668442" target="_blank"></a><i class="fab fa-whatsapp"></i>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2023 - Ecommerce software by Muhammad Hammad Siddiqui.</p>
+      </footer>
+
+    <!-- script -->
+
+    <SCript src="Assets/js/jquery-3.7.0.min.js"></SCript>
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/js/lightslider.js"></script>
+
+    <script type="text/javascript">
+
+        /*-- For Search bar --*/
+        $(document).on('click','.search',function(){
+            $('.search-bar').addClass('search-bar-active')
+        }) 
+        
+        $(document).on('click','.search-cancel',function(){
+            $('.search-bar').removeClass('search-bar-active')
+        }) 
+
+        /* Login-and-sign-up-form-------------------*/
+
+        $(document).on('click','.user,.already-account',function(){
+            $('.form').addClass('login-active').removeClass('sign-up-active')
+        }) 
+
+        $(document).on('click','.sign-up-btn',function(){
+            $('.form').addClass('sign-up-active').removeClass('login-active')
+        }) 
+
+        $(document).on('click','.form-cancel',function(){
+            $('.form').removeClass('login-active').removeClass('sign-up-active')
+        }) 
+
+        /*----Feature-slider*/
+        $(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
+
+
+  /*-----For-fix-menu-when-scroll*/
+
+  $(window).scroll(function(){
+    if($(document).scrollTop() > 50){
+        $('.navigation').addClass('fix-nav');
+    }
+    else{
+        $('.navigation').removeClass('fix-nav');
+    }
+  })
+    </script>
+</body>
+</html>
